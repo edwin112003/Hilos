@@ -23,7 +23,8 @@ io.on('connection', function(socket){
     });
 });
 
+const port = process.env.PORT || 8080;
 //Prbamos que todo va bien xd
-server.listen(8080, function(){
+server.listen(port, function(){
     console.log("Servidor corriendo en http://localhost:8080");
 });
